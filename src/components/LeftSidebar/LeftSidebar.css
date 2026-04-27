@@ -36,7 +36,7 @@
     border: none;
     outline: none;
     font-size: 11px;
-    /* color: white; */
+    /* color: white;   */
 }
 .ls-search input::placeholder{
     color: #c8c8c8;

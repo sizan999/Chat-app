@@ -1,7 +1,6 @@
 import React from 'react'
 import './LeftSidebar.css'
 import assets from '../../assets/assets'
-import { array } from 'firebase/firestore/pipelines'
 
 const LeftSidebar = () => {
   return (
@@ -19,20 +18,20 @@ const LeftSidebar = () => {
             </div>
         </div>
          <div className="ls-list">
-            {
-                array(12).ifNull("").map((item,index)=>(
-                    <div key={index} className="friends">
+         {Array(12).fill("").map(( item,index )=>(
+               <div key={item} className="friends">
                 <img src={assets.profile_img} alt="" />
                 <div>
                     <p>Ashiqul islam Sizan</p>
                     <span>Hello, How are you?</span>
                 </div>
             </div>
-                ))
-            }
+         ))}
          </div>
     </div>
   )
 }
 
 export default LeftSidebar
+
+ 
