@@ -11,3 +11,8 @@
 img.dot{
   width: 15px !important ;
 }
+
+.main{
+  display: flex;
+  height: 100vh;
+}
